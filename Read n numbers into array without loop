@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+	int n; 
+	printf("Enter size of the array \n");
+	scanf("%d",&n);
+	
+	int arr[n]; 
+	printf("Enter the elements into array \n");
+	int i=0;
+	l:
+	if(i<n)
+	{
+		scanf("%d",&arr[i]);
+		i++;
+		if(i<n)
+		goto l;
+	}
+}

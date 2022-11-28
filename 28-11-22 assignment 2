@@ -1,0 +1,5 @@
+a=int(input('enter number:'))
+if a<100:
+    print('given number is less 100')
+else:
+    print('given number is grater than 100')

@@ -1,0 +1,10 @@
+commoncharge=10
+billnumber=int(input('enter bill numer:'))
+username=input('enter section name:')
+sonof=input('son of:')
+units=int(input('enter no of units:'))
+if units<=30:
+    unit=1.95
+    bill=units*unit
+print(bill)
+

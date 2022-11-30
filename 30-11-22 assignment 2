@@ -1,0 +1,47 @@
+cashew=700
+almonds=800
+sugar=50
+blackgram=100
+risebag=1000
+cpno=int(input('enter customer number:'))
+cname=input('enter customer name:')
+caddr=input('enter customer sddress:')
+cq=int(input('enter how many kgs of cashew:'))
+aq=int(input('enter how many kgs of almonds:'))
+sq=int(input('enter how many kgs of sugar:'))
+bq=int(input('enter how many kgs of blackgram:'))
+rq=int(input('enter how many risebags:'))
+coupon=input('enter coupon code  in capital letters:')
+bill=(cq*cashew)+(aq*almonds)+(sq*sugar)+(bq*blackgram)+(rq*risebag)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print('bill without tax:',bill)
+print('tax:',tax)
+print('Discount:',dis)
+bill=bill+tax-dis
+print('customer number:',cpno)
+print('customer name:',cname)
+print('customer address:',caddr)
+print('total bill:',bill)

@@ -1,0 +1,37 @@
+commoncharge=10
+surcharge=0
+bill=0
+totalbill=0
+unitbill=0
+billnumber=int(input('enter bill numer:'))
+username=input('enter section name:')
+sonof=input('son of:')
+units=int(input('enter no of units:'))
+if units<=30:
+    unit=1.95
+    surcharge=25
+elif units<=75:
+    unit=3.00
+    surcharge=30
+    commoncharge=10
+elif units<=125:
+    unit=4.50
+    surcharge=45
+elif units<=225:
+    unit=6.00
+    surcharge=50
+elif units<400:
+    unit=8.75
+    surcharge=55
+elif units>400:
+    unit=9.25
+    surcharge=50
+else:
+    unit=10.50
+    surcharge=50
+unitsbill=unit*units
+bill=units*unit+surcharge+commoncharge
+print('bill without any charge',unitsbill)
+print('surcharge:',surcharge)
+print('commoncharge:',commoncharge)
+print('totalbill:',bill)

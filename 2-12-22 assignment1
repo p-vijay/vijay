@@ -1,0 +1,41 @@
+way-1
+
+def bigsmall(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input())
+b=int(input())
+if(bigsmall(a,b)):
+    print('a is big')
+else:
+    print('b is big')
+    
+
+way-2
+
+def bigsmall(a,b):
+    if a>b:
+        return 'a is is big'
+    else:
+        return 'b is big'
+a=int(input())
+b=int(input())
+print(bigsmall(a,b))
+
+way-3
+
+def bigsmall(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input())
+b=int(input())
+if(bigsmall(a,b)):
+    print('a is big')
+else:
+    print('b is big')
+    
+

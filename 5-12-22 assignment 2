@@ -1,0 +1,6 @@
+list=[12,3,6,10,34]
+d=0
+print('min value',min(list))
+print('max value',max(list))
+d=max(list)-min(list)
+print('difference:',d)

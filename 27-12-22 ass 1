@@ -1,0 +1,7 @@
+n=int(input())
+l=list(map(int,input().split()))
+v=int(input("enter element to found:"))
+if v in l:
+    print("element is found at index:",l.index(v))
+else:
+    print("element not found")

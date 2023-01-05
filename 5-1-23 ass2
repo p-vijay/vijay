@@ -1,0 +1,22 @@
+n=int(input())
+a=[]
+sum=0
+for i in range(0,n):
+    l=[]
+    m=[]
+    r=[]
+    for i in range(0,n):
+        x=int(input())
+        l.append(x)
+    a.append(l)
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            v=(a[i][j])
+            m.append(v)
+        if i==j:
+            s=(a[i][j])
+            r.append(s)
+print("primary diadonal:",r)
+print("secondary diagonal:",m)
+print("maximum of two diagonals=",max(m+r))

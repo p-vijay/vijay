@@ -1,0 +1,10 @@
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+l.sort()
+x=l[k:]
+print(l)
+print(x)
+print("maximum element in list:",max(x))
+print("minimum element in list:",min(x))
+print (max(x)-min(x))
